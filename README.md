@@ -4,5 +4,5 @@
  <body>
   <input type="button" value="出校"
 onclick="location.href=(get_out)" />
-  <body>
-<html>
+  </body>
+</html>
