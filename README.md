@@ -219,11 +219,11 @@
         </div>
         <div id="status" class="value" style="margin-top:10px;">允许入校</div>
         <div id="title-id" class="title">学工号</div>
-        <div id="id" class="value">2021110482</div>
+        <div id="id" class="value">2019111043</div>
         <div id="title-time" class="title">出入校时间</div>
         <div id="time" class="value">2021-10-29 19:31:02</div>
 	<div id="title-college" class="title">学院</div>
-        <div id="college" class="value">电子工程学院</div>
+        <div id="college" class="value">理学院</div>
 
 	<div style="height:100px"></div>
     </div>
