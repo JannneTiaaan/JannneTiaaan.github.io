@@ -200,7 +200,7 @@
 			<option>lwr</option>
 			<option>xyy</option>
 		</select> -->
-		<img id="picurl" src="tyhpic.jpg" style="width:115px;height:225px;border-radius:5px;">
+		<img id="picurl" src="tyhpic.jpg" style="width:115px;height:150px;border-radius:5px;">
         </div>
 	<script>
 		function change(){
