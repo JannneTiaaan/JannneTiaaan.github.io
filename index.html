@@ -1,7 +1,185 @@
-# tyh
+
+<html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>请假外出、返校权限查询通行码</title>
+    <style>
+        body {
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei";
+            color: #333;
+        }
+
+        #main {
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            position: absolute;
+            background: #f2f2f2;
+            min-height: 100vh;
+        }
+
+        #menu {
+            background: white;
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            color: #878787;
+            font-size: 16px;
+            background: #fff;
+            position: relative;
+            border-bottom: .01rem solid #ececec;
+            padding-left: 5px;
+            z-index: 2;
+        }
 
 
-<html>
+        #menu span {
+            display: inline-block;
+            border-bottom: 3px solid #4285f4;
+            height: 100%;
+            box-sizing: border-box;
+            width: 150px;
+            text-align: center;
+        }
+
+        #button {
+            margin: 10px;
+            background: white;
+            padding: 16px;
+            font-size: 12px;
+            font-family: PingFang SC;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #button img {
+            height: 1.25em;
+            width: 1.25em;
+            line-height: 100%;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .title {
+            color: rgb(135, 135, 135);
+            font-size: 14px;
+            font-family: 微软雅黑;
+            padding: 8px;
+            padding-left: 16px;
+        }
+
+        .value {
+            font-size: 14px;
+            color: rgb(96, 98, 102);
+            text-decoration: none;
+            text-align: center;
+            /* line-height: 50px; */
+            background: white;
+            padding: 16px;
+        }
+
+
+        #title-status {
+            font-size: 18px;
+        }
+
+        #status {
+            color: rgb(57, 132, 41);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #hint {
+            height: 50px;
+            text-align: center;
+            color: rgb(135, 135, 135);
+            font-size: 14px;
+            position: absolute;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #more {
+            position: fixed;
+            bottom: 0;
+            height: 50px;
+            background: white;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        #more button {
+            outline: none;
+            border: 1px solid #4285f4;
+            background: unset;
+            border-radius: 20px;
+            font-size: 18px;
+            padding: 5px 20px;
+            display: inline-block;
+            margin: 10px;
+            color: #4285f4;
+            cursor: pointer;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            height: 120px;
+            width: 100%;
+        }
+
+        #footer p {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            color: #4285f4;
+            cursor: pointer;
+        }
+
+        #modal {
+            position: absolute;
+            z-index: 3;
+        }
+
+        #modal .modal-body {
+            background: white;
+            width: 700px;
+            height: 500px;
+            padding: 20px;
+
+        }
+
+        #modal table {
+            margin: 20px;
+            border: 1px solid;
+        }
+
+        #modal td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        #modal .modal-close {
+            width: 1em;
+            background: white;
+            display: inline-block;
+            height: 1em;
+            padding: 5px;
+            border-radius: 100%;
+            text-align: center;
+            vertical-align: top;
+            top: 0;
+            line-height: 100%;
+            font-weight: bold;
+            margin: 20px;
+        }
+    </style>
+    
+</head>
  <body>
  
 <a href="get_out.html">
